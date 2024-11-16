@@ -3,7 +3,7 @@ const fs = require('fs');
 
 function generateListItems() {
   const writeStream = fs.createWriteStream('list-items.html');
-  for (let i = 1; i <= 480000; i++) {
+  for (let i = 1; i <= 4800; i++) {
     writeStream.write(`<li>Item ${i}</li>\n`);
   }
   writeStream.end();
